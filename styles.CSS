@@ -1,0 +1,162 @@
+ /* declaration of variables  */
+ :root{
+    --border-radius : .3rem;
+    --letter-spacing : .25rem;
+    --transition: all .3s linear;
+    --background-color:#027373;
+    --text-color:#f4f4f4;
+    --btn-background:#026873;
+    --btn-background-hover:#011F26;
+    --btn-color:#f2f2f2;
+    --delete-btn-background:#8C1F28;
+    --delete-btn-background-hover:#5C0F16;
+    --edit-btn-background:#2E8B57;
+    --edit-btn-background-hover:#1B4D2B;
+    --box-shadow : 0px 8px 18px #59381B;
+    --box-shadow-hover : 0px 10px 20px #59381B;
+    --select-dropdown-background :#D96941;
+    --select-dropdown-color :#f4f4f4;
+    --select-dropdown-hover :#193C40;
+    --font-family : "Courier","Source Sans Pro", "Arial";
+    --font-size : 1rem;
+    --max-width : 1170px;
+}
+
+/*styling the body */
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.section-container{
+    width: 90vw;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+.section-container:hover{
+    box-shadow: var(--box-shadow-hover);
+}
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+form input, form select, form button{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    transition: var(--transition);
+    outline: none;
+}
+form input, form select{
+    background-color: var(--select-dropdown-background);
+    color: var(--select-dropdown-color);
+}
+form input:hover, form select:hover{
+    background-color: var(--select-dropdown-hover);
+}
+form button{
+    background-color:#8C5F27;
+    color: var(--btn-color);
+    cursor: pointer;
+   
+}
+form button:hover{
+    background-color:var(--btn-background-hover);
+
+}
+.expense-title table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+.expense-title th, .expense-table td{
+    background-color: var(--select-dropdown-background);
+    color: var(--select-dropdown-color);
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    text-align: center;
+    text-transform: uppercase;
+}
+.expense-title th{
+    background-color: var(--select-dropdown-hover);
+}
+.total-amount{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.filter{
+    margin-bottom:2rem;
+    text-align:left;
+}
+.filter select{
+    background-color: var(--select-dropdown-background);
+    color: var(--select-dropdown-color);
+    padding:1rem;
+    width:50%;
+    border:none;
+    border-radius: var(--border-radius);
+    font-size:1rem;
+    transition: var(--transition);
+    letter-spacing: var(--letter-spacing);
+}
+.filter select:hover{
+    background-color: var(--select-dropdown-hover);
+}
+.filter label{
+    font-size:1.2rem;
+    margin-right:1rem;
+    text-transform:uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+.edit-btn {
+    background-color: var(--edit-btn-background);
+    color: var(--btn-color);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .5rem;
+    transition: var(--transition);
+}
+.edit-btn:hover {
+    background-color: var(--edit-btn-background-hover);
+}
+.delete-btn {
+    background-color: var(--delete-btn-background);
+    color: var(--btn-color);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .5rem;
+    transition: var(--transition);
+}
+.delete-btn:hover {
+    background-color: var(--delete-btn-background-hover);
+}
